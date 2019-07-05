@@ -58,7 +58,7 @@ public final class RunMinibus {
 		
 		Controler controler = new Controler(scenario);
 
-		removePercentOfPopulation(scenario.getPopulation(), 0);
+		removePercentOfPopulation(scenario.getPopulation(), 90);
 		PopulationWriter populationWriter = new PopulationWriter(scenario.getPopulation());
 		//populationWriter.write("10PercentPopulation.xml");
 		
