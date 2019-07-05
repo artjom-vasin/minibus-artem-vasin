@@ -1,1 +1,0 @@
-# iteration	operator	status	plan id	creator	parent	vehicle	pax	score	budget	start time	end time	important stops	links
