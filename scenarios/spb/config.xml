@@ -14,8 +14,8 @@
 	<module name="p" >
 		<param name="pIdentifier" value="para_" />
 		<param name="operatorType" value="CarefulMultiPlanOperator" />
-		<param name="numberOfOperators" value="10" />
-		<param name="numberOfIterationsForProspecting" value="10" />
+		<param name="numberOfOperators" value="20" /> <!--10-->
+		<param name="numberOfIterationsForProspecting" value="20" /> <!--10-->
 		<param name="initialBudget" value="2001.0" />
 		<param name="paxPerVehicle" value="10" />
 		<param name="passengerCarEquivalents" value="1.0" />
@@ -33,10 +33,10 @@
 		<param name="startWith24Hours" value="false" />
 		<param name="minOperationTime" value="0.0" />
 
-		<param name="minX" value="676000.0" />
+		<!--<param name="minX" value="676000.0" />
 		<param name="maxX" value="688000.0" />
 		<param name="minY" value="6636000.0" />
-		<param name="maxY" value="6646000.0" />
+		<param name="maxY" value="6646000.0" />-->
 
 		<param name="useFranchise" value="true" />
 		<param name="writeStatsInterval" value="1" />
