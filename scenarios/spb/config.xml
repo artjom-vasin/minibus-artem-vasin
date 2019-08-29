@@ -39,7 +39,7 @@
 		<!-- Default=0;  -->
 		<param name="firstIteration" value="0" />
 		<!-- Default=1000;  -->
-		<param name="lastIteration" value="20" />
+		<param name="lastIteration" value="400" />
 		<!-- Defines which mobility simulation will be used. Currently supported: qsim JDEQSim
 		Depending on the chosen mobsim, you'll have to add additional config modules to configure the corresponding mobsim.
 		For 'qsim', add a module 'qsim' to the config. -->
@@ -54,9 +54,9 @@
 		<!-- Comma-separated list of visualizer output file formats. `transims', `googleearth', and `otfvis'. -->
 		<param name="snapshotFormat" value="" />
 		<!-- iterationNumber % writeEventsInterval == 0 defines in which iterations events are written to a file. `0' disables events writing completely. -->
-		<param name="writeEventsInterval" value="1" />
+		<param name="writeEventsInterval" value="20" />
 		<!-- iterationNumber % writePlansInterval == 0 defines (hopefully) in which iterations plans are written to a file. `0' disables plans writing completely.  Some plans in early iterations are always written -->
-		<param name="writePlansInterval" value="1" />
+		<param name="writePlansInterval" value="20" />
 		<!-- iterationNumber % writeSnapshotsInterval == 0 defines in which iterations snapshots are written to a file. `0' disables snapshots writing completely -->
 		<param name="writeSnapshotsInterval" value="1" />
 	</module>
@@ -199,9 +199,9 @@
 		<!-- will log total score before and after adding route design score. Values: no and onlyNonZeroRouteDesignScore -->
 		<param name="logRouteDesignVsTotalScore" value="no" />
 		<!-- max x coordinate for service area -->
-		<param name="maxX" value="688000.0" />
+		<param name="maxX" value="null" />
 		<!-- max y coordinate for service area -->
-		<param name="maxY" value="6646000.0" />
+		<param name="maxY" value="null" />
 		<!-- Merges all routes of a transit line that have the same sequence of stops. Does not respect the time profile of the routes. Default is false. -->
 		<param name="mergeTransitLine" value="false" />
 		<!-- Link cannot serve as paratransit stop, if its capacity is lower than the limit set here. Default is 0. -->
@@ -211,9 +211,9 @@
 		<!-- min time of operation of each operator in seconds -->
 		<param name="minOperationTime" value="0.0" />
 		<!-- min x coordinate for service area -->
-		<param name="minX" value="676000.0" />
+		<param name="minX" value="null" />
 		<!-- min y coordinate for service area -->
-		<param name="minY" value="6636000.0" />
+		<param name="minY" value="null" />
 		<!-- number of iterations an operator will survive with a negative scoring -->
 		<param name="numberOfIterationsForProspecting" value="10" />
 		<!-- number of operators operating -->
@@ -282,7 +282,6 @@
 	<module name="planCalcScore" >
 		<!-- logit model scale parameter. default: 1.  Has name and default value for historical reasons (see Bryan Raney's phd thesis). -->
 		<param name="BrainExpBeta" value="2.0" />
-		<param name="PathSizeLogitBeta" value="1.0" />
 		<!-- fraction of iterations at which MSA score averaging is started. The matsim theory department suggests to use this together with switching off choice set innovation (where a similar switch exists), but it has not been tested yet. -->
 		<param name="fractionOfIterationsToStartScoreMSA" value="null" />
 		<!-- new_score = (1-learningRate)*old_score + learningRate * score_from_mobsim.  learning rates close to zero emulate score averaging, but slow down initial convergence -->
@@ -383,7 +382,7 @@
 				<param name="openingTime" value="undefined" />
 				<param name="priority" value="1.0" />
 				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="undefined" />
+				<param name="typicalDuration" value="12:00:00" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
 			<parameterset type="activityParams" >
@@ -395,7 +394,7 @@
 				<param name="openingTime" value="undefined" />
 				<param name="priority" value="1.0" />
 				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="undefined" />
+				<param name="typicalDuration" value="2:00:00" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
 			<parameterset type="activityParams" >
@@ -407,7 +406,7 @@
 				<param name="openingTime" value="undefined" />
 				<param name="priority" value="1.0" />
 				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="undefined" />
+				<param name="typicalDuration" value="8:00:00" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
 			<parameterset type="activityParams" >
@@ -419,7 +418,7 @@
 				<param name="openingTime" value="undefined" />
 				<param name="priority" value="1.0" />
 				<param name="scoringThisActivityAtAll" value="true" />
-				<param name="typicalDuration" value="undefined" />
+				<param name="typicalDuration" value="2:00:00" />
 				<param name="typicalDurationScoreComputation" value="relative" />
 			</parameterset>
 			<parameterset type="modeParams" >
