@@ -1,9 +1,0 @@
-2019-08-14 16:38:46,553  WARN CreatePStops:136 file  not found. Falling back to min/max serviceArea parameters.
-2019-08-14 16:48:56,777  WARN TimeProvider:130 Could not find a random time slot between: 97 and 96
-2019-08-14 16:48:56,778  WARN TimeProvider:144 Could not find any time slot. This should not happen. Check time slot size in config. Will return the start slot time
-2019-08-14 16:49:08,965  WARN TimeProvider:130 Could not find a random time slot between: 97 and 96
-2019-08-14 16:49:08,965  WARN TimeProvider:144 Could not find any time slot. This should not happen. Check time slot size in config. Will return the start slot time
-2019-08-14 16:49:08,966  WARN TimeProvider:130 Could not find a random time slot between: 97 and 96
-2019-08-14 16:49:08,966  WARN TimeProvider:144 Could not find any time slot. This should not happen. Check time slot size in config. Will return the start slot time
-2019-08-14 16:49:08,966  WARN TimeProvider:130 Could not find a random time slot between: 97 and 96
-2019-08-14 16:49:08,966  WARN TimeProvider:144 Could not find any time slot. This should not happen. Check time slot size in config. Will return the start slot time

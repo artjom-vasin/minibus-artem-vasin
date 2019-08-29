@@ -43,7 +43,7 @@
 		<param name="logOperators" value="true" />
 		<param name="writeGexfStatsInterval" value="20" />
 		<param name="routeProvider" value="TimeAwareComplexCircleScheduleProvider" />
-		<param name="speedLimitForStops" value="10.0" />
+		<param name="speedLimitForStops" value="20.0" />
 		<param name="planningSpeedFactor" value="1.0" />
 		<param name="gridSize" value="500.0" />
 		<param name="timeSlotSize" value="900.0" /> 
@@ -103,7 +103,7 @@
 		<!-- Specifies the file format for writing events. Currently supported: txt, xml. Multiple values can be specified separated by commas (','). -->
 		<param name="eventsFileFormat" value="xml" />
 		<param name="firstIteration" value="0" />
-		<param name="lastIteration" value="100" />
+		<param name="lastIteration" value="20" />
 		<param name="outputDirectory" value="&OUTPUTBASE;&SCENARIO;_&SEED;" />
 
 		<!-- The type of routing (least cost path) algorithm used, may have the values: Dijkstra or AStarLandmarks -->
@@ -113,16 +113,16 @@
 		<param name="runId" value="&SCENARIO;_&SEED;" />
 
 		<!-- iterationNumber % writeEventsInterval == 0 defines in which iterations events are written to a file. `0' disables events writing completely. -->
-		<param name="writeEventsInterval" value="20" />
+		<param name="writeEventsInterval" value="1" />
 		
 		<!-- iterationNumber % writePlansInterval == 0 defines (hopefully) in which iterations plans are written to a file. `0' disables plans writing completely.  Some plans in early iterations are always written -->
-		<param name="writePlansInterval" value="400" />
+		<param name="writePlansInterval" value="1" />
 	</module>
 
 <!-- ====================================================================== -->
 
 	<module name="global" >
-		<param name="coordinateSystem" value="GK4" />
+		<param name="coordinateSystem" value="EPSG:32635" />
 		<param name="numberOfThreads" value="2" />
 		<param name="randomSeed" value="&SEED;" />
 	</module>
