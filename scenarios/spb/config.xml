@@ -191,7 +191,7 @@
 		<!-- earnings per passenger kilometer -->
 		<param name="earningsPerKilometerAndPassenger" value="0.0" />
 		<!-- The grid size (length and height) for aggregating stuff in various modules (RandomStopProvider, ActivityLocationsParatransitUser, PFranchise). Default of Double.maxvalue effectively aggregates all data points into one gridPoint -->
-		<param name="gridSize" value="500.0" />
+		<!--<param name="gridSize" value="500.0" />-->
 		<!-- The budget a new operator is initialized with -->
 		<param name="initialBudget" value="2001.0" />
 		<!-- will log operators individually if set to true -->
@@ -215,7 +215,7 @@
 		<!-- min y coordinate for service area -->
 		<param name="minY" value="null" />
 		<!-- number of iterations an operator will survive with a negative scoring -->
-		<param name="numberOfIterationsForProspecting" value="10" />
+		<param name="numberOfIterationsForProspecting" value="30" />
 		<!-- number of operators operating -->
 		<param name="numberOfOperators" value="10" />
 		<!-- Type of operator to be used -->
@@ -253,7 +253,7 @@
 		<!-- Optional: add a subsidy to the operators' scores. Currently implemented: 'null': no subsidy; 'perPassenger': a subsidy of 100000 monetary units per passenger -->
 		<param name="subsidyApproach" value="null" />
 		<!-- The size of a time slot aggregating stuff in various modules (TimeProvider, CreateNewPlan). Default of Double.maxvalue effectively aggregates all data points into one time slot -->
-		<param name="timeSlotSize" value="900.0" />
+		<param name="timeSlotSize" value="90.0" />     <!-- 900.0 -->
 		<!-- Will initialize one operator for each transit line with the given time of operation and number of vehicles -->
 		<param name="transitScheduleToStartWith" value="null" />
 		<!-- Will try to adapt the number of operators to meet the given share of profitable operators if set to true -->
