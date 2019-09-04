@@ -59,6 +59,7 @@ public final class RunMinibus {
 		Controler controler = new Controler(scenario);
 
 		removePercentOfPopulation(scenario.getPopulation(), 90);
+
 		PopulationWriter populationWriter = new PopulationWriter(scenario.getPopulation());
 		//populationWriter.write("10PercentPopulation.xml");
 		
@@ -69,13 +70,17 @@ public final class RunMinibus {
 
 	private void removePercentOfPopulation(Population population, int percent) {
 
-		for (Person person : new ArrayList<Person>(population.getPersons().values())){
-			Random random = new Random();
-			if (random.nextDouble() < percent){
-				population.removePerson(person.getId());
-			}
-		}
-	}
+        System.out.println("Number of all plans: " + population.getPersons().size());
+
+        for (Person person : new ArrayList<Person>(population.getPersons().values())) {
+            Random random = new Random();
+            if (random.nextDouble() * 100 < percent) {
+                population.removePerson(person.getId());
+            }
+        }
+
+        System.out.println("Number of plans for testing: " + population.getPersons().size());
+    }
 
 	public final Config getConfig() {
 		return this.config ;

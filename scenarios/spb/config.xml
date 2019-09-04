@@ -39,7 +39,7 @@
 		<!-- Default=0;  -->
 		<param name="firstIteration" value="0" />
 		<!-- Default=1000;  -->
-		<param name="lastIteration" value="20" />
+		<param name="lastIteration" value="400" />
 		<!-- Defines which mobility simulation will be used. Currently supported: qsim JDEQSim
 		Depending on the chosen mobsim, you'll have to add additional config modules to configure the corresponding mobsim.
 		For 'qsim', add a module 'qsim' to the config. -->
@@ -54,9 +54,9 @@
 		<!-- Comma-separated list of visualizer output file formats. `transims', `googleearth', and `otfvis'. -->
 		<param name="snapshotFormat" value="" />
 		<!-- iterationNumber % writeEventsInterval == 0 defines in which iterations events are written to a file. `0' disables events writing completely. -->
-		<param name="writeEventsInterval" value="1" />
+		<param name="writeEventsInterval" value="20" />
 		<!-- iterationNumber % writePlansInterval == 0 defines (hopefully) in which iterations plans are written to a file. `0' disables plans writing completely.  Some plans in early iterations are always written -->
-		<param name="writePlansInterval" value="1" />
+		<param name="writePlansInterval" value="20" />
 		<!-- iterationNumber % writeSnapshotsInterval == 0 defines in which iterations snapshots are written to a file. `0' disables snapshots writing completely -->
 		<param name="writeSnapshotsInterval" value="1" />
 	</module>
@@ -187,7 +187,7 @@
 		<!-- The rest time of a driver at the end of a complete tour in seconds. Defaults to 60 seconds. -->
 		<param name="driverRestTime" value="60.0" />
 		<!-- Price an agent has to pay when boarding, regardless how far he will travel -->
-		<param name="earningsPerBoardingPassenger" value="100.0" />
+		<param name="earningsPerBoardingPassenger" value="50.0" />
 		<!-- earnings per passenger kilometer -->
 		<param name="earningsPerKilometerAndPassenger" value="0.0" />
 		<!-- The grid size (length and height) for aggregating stuff in various modules (RandomStopProvider, ActivityLocationsParatransitUser, PFranchise). Default of Double.maxvalue effectively aggregates all data points into one gridPoint -->
@@ -253,7 +253,7 @@
 		<!-- Optional: add a subsidy to the operators' scores. Currently implemented: 'null': no subsidy; 'perPassenger': a subsidy of 100000 monetary units per passenger -->
 		<param name="subsidyApproach" value="null" />
 		<!-- The size of a time slot aggregating stuff in various modules (TimeProvider, CreateNewPlan). Default of Double.maxvalue effectively aggregates all data points into one time slot -->
-		<param name="timeSlotSize" value="90.0" />     <!-- 900.0 -->
+		<param name="timeSlotSize" value="900.0" />
 		<!-- Will initialize one operator for each transit line with the given time of operation and number of vehicles -->
 		<param name="transitScheduleToStartWith" value="null" />
 		<!-- Will try to adapt the number of operators to meet the given share of profitable operators if set to true -->
