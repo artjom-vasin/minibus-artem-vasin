@@ -54,9 +54,9 @@
 		<!-- Comma-separated list of visualizer output file formats. `transims', `googleearth', and `otfvis'. -->
 		<param name="snapshotFormat" value="" />
 		<!-- iterationNumber % writeEventsInterval == 0 defines in which iterations events are written to a file. `0' disables events writing completely. -->
-		<param name="writeEventsInterval" value="1" />
+		<param name="writeEventsInterval" value="20" />
 		<!-- iterationNumber % writePlansInterval == 0 defines (hopefully) in which iterations plans are written to a file. `0' disables plans writing completely.  Some plans in early iterations are always written -->
-		<param name="writePlansInterval" value="1" />
+		<param name="writePlansInterval" value="20" />
 		<!-- iterationNumber % writeSnapshotsInterval == 0 defines in which iterations snapshots are written to a file. `0' disables snapshots writing completely -->
 		<param name="writeSnapshotsInterval" value="1" />
 	</module>
@@ -187,11 +187,11 @@
 		<!-- The rest time of a driver at the end of a complete tour in seconds. Defaults to 60 seconds. -->
 		<param name="driverRestTime" value="60.0" />
 		<!-- Price an agent has to pay when boarding, regardless how far he will travel -->
-		<param name="earningsPerBoardingPassenger" value="50.0" />
+		<param name="earningsPerBoardingPassenger" value="1.0" />
 		<!-- earnings per passenger kilometer -->
 		<param name="earningsPerKilometerAndPassenger" value="0.0" />
 		<!-- The grid size (length and height) for aggregating stuff in various modules (RandomStopProvider, ActivityLocationsParatransitUser, PFranchise). Default of Double.maxvalue effectively aggregates all data points into one gridPoint -->
-		<!--<param name="gridSize" value="500.0" />-->
+		<param name="gridSize" value="500.0" />
 		<!-- The budget a new operator is initialized with -->
 		<param name="initialBudget" value="2001.0" />
 		<!-- will log operators individually if set to true -->
@@ -199,9 +199,9 @@
 		<!-- will log total score before and after adding route design score. Values: no and onlyNonZeroRouteDesignScore -->
 		<param name="logRouteDesignVsTotalScore" value="no" />
 		<!-- max x coordinate for service area -->
-		<param name="maxX" value="null" />
+		<param name="maxX" value="713000" />
 		<!-- max y coordinate for service area -->
-		<param name="maxY" value="null" />
+		<param name="maxY" value="6682000" />
 		<!-- Merges all routes of a transit line that have the same sequence of stops. Does not respect the time profile of the routes. Default is false. -->
 		<param name="mergeTransitLine" value="false" />
 		<!-- Link cannot serve as paratransit stop, if its capacity is lower than the limit set here. Default is 0. -->
@@ -211,11 +211,11 @@
 		<!-- min time of operation of each operator in seconds -->
 		<param name="minOperationTime" value="0.0" />
 		<!-- min x coordinate for service area -->
-		<param name="minX" value="null" />
+		<param name="minX" value="637000" />
 		<!-- min y coordinate for service area -->
-		<param name="minY" value="null" />
+		<param name="minY" value="6610000" />
 		<!-- number of iterations an operator will survive with a negative scoring -->
-		<param name="numberOfIterationsForProspecting" value="30" />  <!-- 10 -->
+		<param name="numberOfIterationsForProspecting" value="10" />
 		<!-- number of operators operating -->
 		<param name="numberOfOperators" value="10" />
 		<!-- Type of operator to be used -->
